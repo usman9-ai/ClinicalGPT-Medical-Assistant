@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ClinicalGPT - A Medical Assistant Chatbot
 
 ClinicalGPT is an advanced AI-powered medical assistant chatbot designed to analyze medical documents, diagnose diseases based on patient symptoms, and provide medical advice. It leverages state-of-the-art language models and vector databases to process text, audio, and PDF inputs, making it a versatile tool for clinical applications.
@@ -25,21 +24,14 @@ ClinicalGPT is an advanced AI-powered medical assistant chatbot designed to anal
 - Ensure you have pip installed on your system.
 
 ### Steps
-1. *Clone the repository:*
-   bash
-   git clone https://github.com/your-username/ClinicalGPT.git
-   cd ClinicalGPT
-   
-
+1. *Clone the repository*
 2. *Install the required dependencies:*
-   bash
    pip install -r requirements.txt
    
-
-3. *Create an environment file:*
+4. *Create an environment file:*
    You will need to set up a .env file in the root of the project. The file should contain the necessary environment variables such as API keys and other credentials. You can follow the template provided in the repository (.env.example).
 
-4. *Run the application:*
+5. *Run the application:*
    bash
    python app.py
    
@@ -59,8 +51,3 @@ Make sure to configure your environment properly using a .env file. This file sh
 
 Refer to the .env.example for guidance on setting up these variables.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-=======
-
->>>>>>> dca6b95fd12da3ca14cf64201b2daff24d7ddb20
