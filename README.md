@@ -1,55 +1,66 @@
-# Cyanotoxin Classification for Water Quality Control Using Transfer Learning
+<<<<<<< HEAD
+# ClinicalGPT - A Medical Assistant Chatbot
 
-This project is an extension of existing research aimed at improving the classification of cyanotoxins for water quality control. By leveraging transfer learning, we built a model that classifies cyanotoxins into various categories, helping to ensure the safety of water systems. Our approach compares the performance of several machine learning classifiers and a fully connected neural network to identify the most accurate classification method.
+ClinicalGPT is an advanced AI-powered medical assistant chatbot designed to analyze medical documents, diagnose diseases based on patient symptoms, and provide medical advice. It leverages state-of-the-art language models and vector databases to process text, audio, and PDF inputs, making it a versatile tool for clinical applications.
 
-## Overview
-The primary goal of this research is to extend an existing cyanotoxin classification system by adding more classes and evaluating the effectiveness of different machine learning classifiers. The project builds on the *CyanotoxinZero* base model, which originally classified 10 cyanotoxin classes. We applied transfer learning techniques and experimented with a fully connected neural network (FCNN) and six additional machine learning classifiers.
+## Features
+- *Medical Document Analysis*: Upload medical documents (text, audio, or PDF) for analysis.
+- *Symptom-based Diagnosis*: Provide patient symptoms, and ClinicalGPT offers potential diagnoses and medical advice.
+- *Multi-Input Support*: Accepts text, audio, and PDF documents as input.
+- *Advanced Embedding & Search*: Uses ClinicalBERT to compute embeddings and PineCon as a vector database for efficient search and retrieval.
+- *Powerful Language Model*: Powered by GeminiPro, a sophisticated large language model (LLM) designed for medical applications.
+- *User-friendly Interface*: Built with Gradio for an easy-to-use, web-based user interface.
 
-
-## Dataset
-The dataset comprises 13 cyanotoxins classes/genera, which is actually an extention of an existing public data set TCB-DS.
-
-## Methodology
-### Transfer Learning
-We used transfer learning techniques on the CyanotoxinZero base model, which allowed us to leverage pre-trained layers while adding new fully connected layers for fine-tuning on the expanded dataset.
-
-### Classifiers
-We compared the FCNN model against six traditional machine learning classifiers:
-- *Random Forest*
-- *XGBoost*
-- *KNN Classifier*
-- *FM Classifier*
-- *Gradient Boosting Classifier*
-- *Gaussian Naive Bayes*
-
-### Evaluation Metrics
-The following evaluation criteria were used to compare the classifiers:
-- *Macro Precision, Recall, and F1 Score*: Calculated without considering class imbalance.
-- *Weighted Precision, Recall, and F1 Score*: Takes class imbalance into account by giving more weight to the larger classes.
-
-### Results
-Our findings show that the *Fully Connected Neural Network (FCNN)* outperformed all other machine learning classifiers in all the evaluation metrics, demonstrating superior classification performance. The FCNN provided the best scores in terms of macro and weighted precision, recall, and F1 scores.
+## Technology Stack
+- *Embeddings*: [ClinicalBERT](https://huggingface.co/medicalai/ClinicalBERT)
+- *Audio Transcrption*: [openai/whisper-tiny](https://huggingface.co/openai/whisper-tiny)
+- *Vector Database*: [PineCone](https://www.pinecone.io/)
+- *Large Language Model*: [GeminiPro](https://gemini.google.com/app)
+- *UI Framework*: [Gradio](https://gradio.app)
 
 ## Installation
 
 ### Prerequisites
 - Python 3.8+
-- Ensure you have pip installed.
+- Ensure you have pip installed on your system.
 
 ### Steps
 1. *Clone the repository:*
    bash
-   git clone https://github.com/your-username/CyanotoxinClassification.git
-   cd CyanotoxinClassification
+   git clone https://github.com/your-username/ClinicalGPT.git
+   cd ClinicalGPT
    
 
-2. *Install required dependencies:*
+2. *Install the required dependencies:*
    bash
    pip install -r requirements.txt
    
 
+3. *Create an environment file:*
+   You will need to set up a .env file in the root of the project. The file should contain the necessary environment variables such as API keys and other credentials. You can follow the template provided in the repository (.env.example).
+
+4. *Run the application:*
+   bash
+   python app.py
    
 
+   This will launch the Gradio-based UI where you can interact with the chatbot.
+
+## Usage
+1. Open the Gradio web interface.
+2. Choose the input format: text, audio, or PDF.
+3. Upload your medical document or describe the patient's symptoms in the text input box.
+4. Click on "Submit" to receive a diagnosis or medical advice based on the input provided.
+
+## Environment Setup
+Make sure to configure your environment properly using a .env file. This file should include the necessary API keys for:
+- *PineCone*: To manage the vector database.
+- *GeminiPro*: To access the large language model for generating responses.
+
+Refer to the .env.example for guidance on setting up these variables.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+=======
+
+>>>>>>> dca6b95fd12da3ca14cf64201b2daff24d7ddb20
