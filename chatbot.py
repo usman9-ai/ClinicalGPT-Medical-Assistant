@@ -14,8 +14,8 @@ import pinecone
 
 class ClinicalBERTEmbeddings(Embeddings):
     def __init__(self):
-        self.tokenizer = BertTokenizer.from_pretrained('emilyalsentzer/Bio_ClinicalBERT')
-        self.model = BertModel.from_pretrained('emilyalsentzer/Bio_ClinicalBERT')
+        self.tokenizer = BertTokenizer.from_pretrained("medicalai/ClinicalBERT")
+        self.model = BertModel.from_pretrained("medicalai/ClinicalBERT")
 
     def embed_documents(self, texts):
         embeddings = []
